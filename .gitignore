@@ -1,43 +1,45 @@
-# =============== #
+# ===================
 # Unity .gitignore
-# =============== #
+# ===================
+# Get latest from: https://github.com/github/gitignore/blob/main/Unity.gitignore
 
+# Unity folders
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Uu]ser[Ss]ettings/
 [Mm]emoryCaptures/
-[Uu]serSettings/
-[Pp]ackages/com.unity.package-manager/Manifest.json.meta
+[Rr]ecordings/
+
+# Addressables
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+/ServerData
+
+# Rider / VS / JetBrains
+.idea/
+.vs/
+.vscode/
+.gradle/
+ExportedObj/
+.consulo/
+*.DotSettings.user
+
+# Visual Scripting auto-generated files
+/[Aa]ssets/Unity.VisualScripting.Generated/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
-# Uncomment if you have large asset folders you don’t want to track
-# /[Aa]ssets/AssetStoreTools*
-
-# Visual Studio cache
-.vs/
-.vscode/
-*.csproj
-*.unityproj
-*.sln
-*.suo
-*.tmp
-*.user
-*.userprefs
-
-# OS generated files
+# OS files
 .DS_Store
 Thumbs.db
 
-# Crash and error logs
-sysinfo.txt
-*.stacktrace
-
-# Build artifacts
+# Build files
 *.apk
 *.aab
 *.app
@@ -50,17 +52,36 @@ sysinfo.txt
 *.msixupload
 *.appxbundle
 *.unitypackage
+*.unitypackage.meta
 
-# Rider
-.idea/
+# IDE and temp files
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+mono_crash.*
 
-# Auto-generated
-/[Pp]ackages/com.unity.*.meta
-/[Pp]ackages/manifest.json.meta
+# Crash and test files
+sysinfo.txt
+crashlytics-build.properties
+InitTestScene*.unity*
 
 # Collaborate cache
 /[Uu]serSettings/Collab/
 
-# Addressables
-/[Aa]ssets/AddressableAssetsData/*
-/[Aa]ssets/StreamingAssets/aa/*
+# Auto-generated
+/[Pp]ackages/com.unity.*.meta
+/[Pp]ackages/manifest.json.meta
