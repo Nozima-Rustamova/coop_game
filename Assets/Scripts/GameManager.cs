@@ -50,10 +50,10 @@ public class GameManager:MonoBehaviour
         endPanel.SetActive(true);
 
         if (player1Cart.itemsCollected > player2Cart.itemsCollected)
-            winnerText.text = "🛒Player 1 Wins!!!";
+            winnerText.text = "Player 1 Wins!!!";
         else if (player2Cart.itemsCollected > player1Cart.itemsCollected)
-            winnerText.text = "🛍 Player 2 Wins!";
+            winnerText.text = "Player 2 Wins!";
         else
-            winnerText.text = "🤝 It's a Draw!";
+            winnerText.text = "It's a Draw!";
     }
 }

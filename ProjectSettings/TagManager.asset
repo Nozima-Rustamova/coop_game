@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Object
+  - Player_2
+  - Player_1
+  - Food
   layers:
   - Default
   - TransparentFX
